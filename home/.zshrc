@@ -21,7 +21,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} ma=0\;33 # colorize cmp me
 zstyle ':completion:*' squeeze-slashes false # explicit disable to allow /*/ expansion
 
 # main opts
-setopt append_history inc_append_history share_history # better history
+setopt append_history inc_append_history share_history hist_ignore_all_dups hist_ignore_space # better history
 # on exit, history appends rather than overwrites; history is appended as soon as cmds executed; history shared across sessions
 setopt auto_menu menu_complete # autocmp first menu match
 setopt autocd # type a dir to cd
